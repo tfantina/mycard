@@ -1,0 +1,8 @@
+<h1>All Users</h1>
+<table clasds="table">
+  <%= for user <- @users do %>
+  <tr>
+    <td><b><%= first_name(user) %> %></b> (<%= user.id %>)</td>
+  </td>
+  <% end %>
+</table>
